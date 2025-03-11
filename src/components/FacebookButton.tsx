@@ -4,7 +4,7 @@ export function FacebookButton() {
   return (
     <div className="sticky bottom-6 left-0 z-50 w-fit pl-6">
       <a 
-        href="https://facebook.com" // TODO: Change to the actual Facebook page
+        href="https://www.facebook.com/InterBit"
         target="_blank" 
         rel="noopener noreferrer"
         className="flex items-center gap-[15px] bg-white p-3 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100"

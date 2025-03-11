@@ -24,6 +24,9 @@ export function LocationMap() {
 
     // Add a marker
     const marker = L.marker([44.412919, 26.149752]).addTo(map)
+    marker.on('click', () => {
+      window.open('https://maps.app.goo.gl/JSb8XPh4QxQUz4b89', '_blank')
+    })
 
     // Disable zoom controls for a cleaner look
     map.removeControl(map.zoomControl)
