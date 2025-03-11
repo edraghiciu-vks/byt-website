@@ -1,0 +1,25 @@
+@keyframes slide-in {
+  0% {
+    transform: translateX(-6rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Here is where you will add extra CSS */
+
+/* Ex: In .tsx files, you will find HTML tags where you can add a custom class name.
+Then here in this file you can target that class and add extra CSS to it. 
+
+Example:
+<div className="test">
+  <h1>Hello</h1>
+</div> -- In .tsx
+
+.test {
+  background-color: red;
+} -- In this file
+*/
