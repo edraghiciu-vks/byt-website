@@ -1,4 +1,8 @@
 import React from 'react'
+import outsideImg from '../assets/outside.jpeg'
+import frontImg from '../assets/front.jpeg'
+import hallImg from '../assets/hall.jpeg'
+import doorImg from '../assets/door.jpeg'
 
 interface FindStep {
   image: string;
@@ -8,22 +12,22 @@ interface FindStep {
 
 const steps: FindStep[] = [
   {
-    image: "/1.jpeg",
+    image: outsideImg,
     title: "Vedere Stradală",
     emoji: "🏢"
   },
   {
-    image: "/2.jpeg",
+    image: frontImg,
     title: "Fațada Clădirii",
     emoji: "🏗️"
   },
   {
-    image: "/3.jpeg",
+    image: hallImg,
     title: "De la intrare dreapta pe hol",
     emoji: "🚪"
   },
   {
-    image: "/4.jpeg",
+    image: doorImg,
     title: "Intrare Birou",
     emoji: "🚪"
   }
@@ -47,10 +51,10 @@ export function Findus() {
           {steps.map((step, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="aspect-w-16 aspect-h-12">
-                <div
-                  className={`w-full h-full bg-[url('${step.image}')] bg-cover bg-center`}
-                  role="img"
-                  aria-label={step.title}
+                <img
+                  src={step.image}
+                  alt={step.title}
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-4 text-center">
