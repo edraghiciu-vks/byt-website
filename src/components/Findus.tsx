@@ -8,7 +8,7 @@ interface FindStep {
 
 const steps: FindStep[] = [
   {
-    image: "./1.jpg",
+    image: "/1.jpg",
     title: "Vedere Stradală",
     emoji: "🏢"
   },
@@ -47,10 +47,10 @@ export function Findus() {
           {steps.map((step, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="aspect-w-16 aspect-h-12">
-                <img
-                  src={step.image}
-                  alt={step.title}
-                  className="w-full h-full object-cover"
+                <div
+                  className={`w-full h-full bg-[url('${step.image}')] bg-cover bg-center`}
+                  role="img"
+                  aria-label={step.title}
                 />
               </div>
               <div className="p-4 text-center">

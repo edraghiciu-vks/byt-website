@@ -10,7 +10,7 @@ export function Header() {
   return (
     <header className="top-0 left-0 right-0 bg-white/80 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <img src="/default-logo.png" alt="InterBit Accounting Logo" className="w-[150px] h-[150px] object-contain" />
+        <div className="w-[150px] h-[150px] bg-[url('/default-logo.png')] bg-contain bg-center bg-no-repeat" />
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
