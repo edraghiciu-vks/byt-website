@@ -11,7 +11,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
-          if (assetInfo.names.endsWith('.jpeg') || assetInfo.names.endsWith('.jpg') || assetInfo.names.endsWith('.png')) {
+          if (assetInfo.name.endsWith('.jpeg') || assetInfo.name.endsWith('.jpg') || assetInfo.name.endsWith('.png')) {
             return 'assets/images/[name]-[hash][extname]';
           }
           return 'assets/[name]-[hash][extname]';
