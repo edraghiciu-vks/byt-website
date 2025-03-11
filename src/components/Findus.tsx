@@ -8,22 +8,22 @@ interface FindStep {
 
 const steps: FindStep[] = [
   {
-    image: "/1.jpg",
+    image: "/1.jpeg",
     title: "Vedere Stradală",
     emoji: "🏢"
   },
   {
-    image: "/2.jpg",
+    image: "/2.jpeg",
     title: "Fațada Clădirii",
     emoji: "🏗️"
   },
   {
-    image: "/3.jpg",
+    image: "/3.jpeg",
     title: "De la intrare dreapta pe hol",
     emoji: "🚪"
   },
   {
-    image: "/4.jpg",
+    image: "/4.jpeg",
     title: "Intrare Birou",
     emoji: "🚪"
   }
